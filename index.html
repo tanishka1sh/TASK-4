@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        
+        <header>
+            <h1>Interactive Quiz Application</h1>
+            <p>Answer all questions below and click submit to check your score.</p>
+        </header>
+
+        
+        <div id="loading" class="message">Loading questions, please wait...</div>
+
+        
+        <div id="error" class="message error" style="display: none;"></div>
+
+        <!-- Quiz Form / Questions Container -->
+        <form id="quiz-form" style="display: none;">
+            <div id="questions-container">
+             
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submit-btn" class="btn">Submit Quiz</button>
+        </form>
+
+        <!-- Result Section -->
+        <div id="result-section" class="result-section" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score-text"></p>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

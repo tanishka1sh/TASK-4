@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+header p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* Messages */
+.message {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2980b9;
+    padding: 20px;
+}
+
+.error {
+    color: #c0392b;
+}
+
+/* Question Card Styling */
+.question-card {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.question-card h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #34495e;
+}
+
+/* Options Styling */
+.option-label {
+    display: block;
+    background: #ffffff;
+    border: 1px solid #bdc3c7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.option-label:hover {
+    background: #ecf0f1;
+}
+
+.option-label input {
+    margin-right: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: block;
+    width: 100%;
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #219653;
+}
+
+#restart-btn {
+    background: #2980b9;
+}
+
+#restart-btn:hover {
+    background: #2471a3;
+}
+
+/* Result Section & Answer Feedback Highlighting */
+.result-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.correct {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+    color: #155724;
+}
+
+.incorrect {
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+    color: #721c24;
+}
